@@ -229,4 +229,43 @@ $(function () {
 
                 ]
         });
+        $('#highchart4').highcharts({
+            colors: ["#ED3B1C"],
+                chart: {type:'column',
+                        style: {
+                            fontFamily: "Radiance"
+                        },
+                        backgroundColor: 'transparent'
+                    },
+                title: {text: '<b>The International 2014 e 2015</b>',
+                    style:{color:'#808080'}},
+                xAxis: {
+                    categories:['Brewmaster','Doom','Earthshaker','Gyrocopter','Lina','Mirana','Queen of Pain','Rubick','Shadow Shaman','Treant Protector']
+                },
+                yAxis: {
+                    title: {text: '<b>Quantidade de vezes escolhido</b>'}
+                },
+                credits: {
+                    enabled: false
+                },
+                tooltip: {
+                        formatter: function() {
+                                return 'O heroi <b>' + this.x + '</b> foi escolhido <b>' + this.y + ' vezes </b> no '+ this.series.name;
+                    }
+                },
+                series:
+                [
+                    {
+                        name: 'International 2014',
+                        color: '#f02602',
+                        data: [126,123,63,19,7,195,29,106,126,140]
+                    },
+                    {
+                        name: 'International 2015',
+                        color: '#fd6600',
+                        data: [8,1,179,190,163,7,199,155,15,18]
+                    }
+
+                ]
+        });
 });
