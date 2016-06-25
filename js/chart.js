@@ -195,13 +195,13 @@ $(function () {
                 xAxis: {
                     categories: ['Earthshaker','Invoker','Juggernault','Legion Commander','Phanton Assassin','Pudge','Shadow Fiend','Slark','Sniper','Windranger']
                 },
-                yAxis: {title: {text: '<b>Presença</b>'}},
+                yAxis: {title: {text: '<b>Presença em %</b>'}},
                 credits: {
                     enabled: false
                 },
                 tooltip: {
                         formatter: function() {
-                                return 'The presence for <b>' + this.x + '</b> is <b>' + this.y + '</b>, in '+ this.series.name;
+                                return 'The presence for <b>' + this.x + '</b> is <b>' + this.y + '</b> %, in '+ this.series.name;
                     }
                 },
                 series:
