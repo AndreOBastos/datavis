@@ -8,6 +8,11 @@ and open the template in the editor.
     <head>
         <title>Trabalho de Visualização - Dota 2</title>
         <link rel="stylesheet" type="text/css" href="css/relatorio.css">
+        <link rel="stylesheet" type='text/css' href="css/w3.css">
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js" type="text/javascript"></script>
+        <script src="https://code.highcharts.com/highcharts.js" type="text/javascript"></script>
+        <script src="js/chart.js" type="text/javascript"></script>
+        <script src="js/slideshow.js"></script>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
@@ -25,7 +30,37 @@ and open the template in the editor.
                     </div>
                     <div id='text'>
                         <p>
-                            
+                            Dota 2 possui 111 heróis diferentes, cada um com 4 habilidades que lhe tornam únicos. Cada herói possui pontos de atributos que o definem
+                            como um herói de força, de agilidade ou de inteligência. O tipo do herói é importante pois os itens equipáveis comprado ao longo do jogo ajudam
+                            a maximizar os atributos do heróis, sendo que para cada ponto de atributo que o item maximiza, existe um bonus diferente, sendo que
+                            o bonus é maior para o atributo do tipo do herói.
+                        </p>
+                        <div class='w3-content' style='max-width:500px; display:block; margin-bottom:30px; margin-top:30px; position:relative;'>
+                            <img class='slide' style='width:100%;' src="images/Heros.png" alt="Mapa - Dota 2">
+                            <img class='slide' style='width:100%; display:none' src="images/antiMage.png" alt="Mapa - Dota 2">
+                            <a class='w3-btn-floating' style='position:absolute; top:45%; left:0;' onclick='plusDivs(-1)'>&#10094;</a>
+                            <a class='w3-btn-floating' style='position:absolute; top:45%; right:0;' onclick='plusDivs(1)'>&#10095;</a>
+                        </div>
+                        <p>
+                            Uma vez escolhido os heróis, a partida de Dota se inicia. Costuma-se divivir a partida em três fases distintas durante o jogo. A primeira fase, comumente chamada
+                            de "lane phase", é o estagio inicial do jogo, onde o objetivo principal é garantir que os heróis com mais potencial de combate possam ganhar bastante experiência e ouro. Nesta
+                            fase normalmente os jogadores se estabelecem em um dos corredores ("safelane", "offline" e "midlane") ou na "jungle". A segunda fase, comumente chamada de
+                            "teamfight phase", é o estágio em que os times procuram se agrupar e atacar de forma coordenada. A terceira fase, conhecida com "end phase", é o ponto crucial do jogo
+                            onde os times buscam destruir a base adversária para finalizar o game. Nas fases 2 e 3 os time flutuam por todo o mapa, caçando, forçando a recuar, ou manipulando o time adversário, como
+                            um jogo de xadrez.
+                        </p>
+                        <p>
+                            <div id="highchart3"></div>
+                        </p>
+                        <p>
+                            Essa variedade de heróis combinados com os diversos itens diponíveis permitem um leque de possibilidades para os jogadores, tornando cada partida uma
+                            experiência única. Apesar disso, com o objetivo de manter o jogo sempre desafiador para seus jogadores, exigindo uma necessidade de adaptação constante,
+                            a Valve, atualiza com bastante frequência o jogo. Essas atualizações são bem variadas, indo de simples mudanças nos custos de um item, como até a adição de heróis. Essas
+                            mudanças constantes provocam mudanças consideráveis na dinâmica do jogo, atigindo tanto jogadores normais como jogadores profissionais. Prova disso é a
+                            diferença de desempenho dos principais times de Dota nos campeonatos. Nenhum time foi campeão mais de uma vez do "The International", principal campeonato de Dota no mundo.
+                        </p>
+                        <p>
+                            (mostrar algum grafico que demonstre essa diferenca de um campeonato para outro, quanto a herois usados)
                         </p>
                         <a href="popularidade.html" class="buttonActive" id="back">
                             &#10094; Retornar
