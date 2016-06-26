@@ -281,4 +281,100 @@ $(function () {
 
                 ]
         });
+        $('#highchart5').highcharts({
+            colors: ["#ED3B1C"],
+                chart: {
+                    type:'column',
+                    style: {
+                        fontFamily: "Radiance"
+                    },
+                    backgroundColor: 'transparent',
+                    width:900,
+                    height:700,
+                    spacingLeft:50,
+                    spacingight:50
+                },
+                title: {
+                    text: '<b>Ganhos totais por personalidade e por ano</b>',
+                    style:{
+                        color:'#808080'
+                    }
+                },
+                xAxis: {
+                    categories: ['ppd','UNiVeRsE','Fear','Aui_2000','SumaiL','xiao8','Hao','Puppey','Mu','Banana']
+                },
+                yAxis: {
+                    title: {
+                        text: '<b>Ganhos totais</b>'
+                    },
+                    stackLabels:{
+                        enabled:true,
+                        style: {
+                            //fontWeight: 'bold',
+                            color: '#808080',
+                            textShadow:false
+                        },
+                        formatter: function() {
+                            return '$' + this.total.toLocaleString(); 
+                        }
+                        
+                    },
+                    min:0,
+                    reversedStacks:false
+                },
+                credits: {
+                    enabled: false
+                },
+                tooltip: {
+                        formatter: function() {
+                                return '<b>' + this.x + ':</b><br> $' + this.y.toLocaleString() + ' em '+ this.series.name;
+                    }
+                },
+                legend: {
+                    itemStyle:{
+                        color:'#808080',
+                        fontSize: '16px'
+                    }
+                },
+                plotOptions: {
+                    column: {
+                        stacking: 'normal',
+                        minPointLength: 6
+                    }
+                },
+                series:
+                [
+                    {
+                        name: '2011',
+                        color: '#FF8974',
+                        data: [0, 4166.67, 4324.33, 0, 0, 10640.95, 1415.80, 203870.06, 1104.85, 2367.45]
+                    },
+                    {
+                        name: '2012',
+                        color: '#ED3C1C',
+                        data: [9666.67, 1476.94, 3582.20, 4000.00, 0, 42568.82, 8267.43, 62922.60, 8267.43, 0]
+                    },
+                    {
+                        name: '2013',
+                        color: '#BE2509',
+                        data: [7012.32, 5124.06, 7591.09, 20178.01, 0, 16213.62, 61937.89, 155010.38, 61054.35, 61616.06]
+                    },
+                    {
+                        name: '2014',
+                        color:'#961700',
+                        data: [313493.63, 312493.63, 78512.09, 215791.69, 0, 1032369.94, 1112280.99, 189893.70, 1098069.21, 1112280.99]
+                    },
+                    {
+                        name: '2015',
+                        color: '#BE2509',
+                        data: [1730076.34, 1730076.34, 1730076.34, 1641750.94, 1730076.34, 560409.39, 383286.25, 446222.82, 31315.26, 31315.26]
+                    },
+                    {
+                        name: '2016',
+                        color: '#BE2509',
+                        data: [118691.80, 114628.00, 118691.80, 16308.00, 118691.80, 53400.00, 97843.80, 236886.40, 97843.80, 0]
+                    },
+
+                ]
+        });
 });
