@@ -204,25 +204,32 @@ $(function () {
                                 return 'The presence for <b>' + this.x + '</b> is <b>' + this.y + '</b> %, in '+ this.series.name;
                     }
                 },
+                legend: {
+                    itemStyle:{
+                        color:'#808080',
+                        fontSize: '16px'
+                    }
+                },
                 series:
                 [
                     {
                         name: 'safe lane',
-                        color: '#e2f008',
+                        color: '#FF8974',
                         data: [43.21,0,79.38,20.38,77.24,17.78,6.30,75.56,39.15,14.49]
                     },
                     {
                         name: 'mid lane',
-                        color: '#f09408',
+                        color: '#ED3C1C',
                         data: [21.82,81.97,0,7.29,6.79,42.63,90.06,6.47,37.81,44.73]
                     },
                     {
                         name: 'off lane',
-                        color:'#962104',
+                        color: '#BE2509',
                         data: [35.55,12.21,13.01,19.58,14.94,36.24,0,17.44,21.72,40.11]
                     },
                     {
                         name: 'jungle',
+                        color:'#961700',
                         data: [6.07,0,0,52.19,0,0,0,0,0,0]
                     }
 
@@ -253,16 +260,22 @@ $(function () {
                                 return 'O heroi <b>' + this.x + '</b> foi escolhido <b>' + this.y + ' vezes </b> no '+ this.series.name;
                     }
                 },
+                legend: {
+                    itemStyle:{
+                        color:'#808080',
+                        fontSize: '16px'
+                    }
+                },
                 series:
                 [
                     {
                         name: 'International 2014',
-                        color: '#f02602',
+                        color: '#FF8974',
                         data: [126,123,63,19,7,195,29,106,126,140]
                     },
                     {
                         name: 'International 2015',
-                        color: '#fd6600',
+                        color: '#961700',
                         data: [8,1,179,190,163,7,199,155,15,18]
                     }
 
