@@ -378,4 +378,233 @@ $(function () {
                     }
                 ]
         });
+		
+		$('#highchart6').highcharts({
+       colors: ["#ED3B1C"],
+        chart: {
+            type: 'bar',
+			style: {
+                            fontFamily: "Radiance"
+                        },
+			backgroundColor: 'transparent'
+        },
+        title: {
+            text: 'Heróis com maior presença nos pubs',
+			style:{color:'#808080'}
+        },
+        xAxis: {
+            categories: ['Lion', 'Slark', 'Lifestealer', 'Invoker', 'Timbersaw','Mirana','Bounty Hunter', 'Riki', 'Slardar', 'Faceless Void'],
+            title: {
+                text: null
+            }
+        },
+        yAxis: {
+            min: 0,
+			max: 100,
+            title: {
+                text: 'Presença nas partidas (%)',
+                align: 'high'
+            },
+            labels: {
+                overflow: 'justify'
+            }
+        },
+        tooltip: {
+            valueSuffix: ' %'
+        },
+        plotOptions: {
+            bar: {
+                dataLabels: {
+                    enabled: true
+                }
+            }
+        },
+        credits: {
+            enabled: false
+        },
+				 plotOptions: {
+                    area: {
+                        fillColor: {
+                            linearGradient: {
+                                x1: 0,
+                                y1: 0,
+                                x2: 0,
+                                y2: 1
+                            },
+                            stops: [
+                                [0, '#ED3B1C'],
+                                [1, 'transparent']
+                            ]
+                        },
+                        lineWidth: 1,
+                        marker: {
+                            enabled: false
+                        },
+                        shadow: false,
+                        states: {
+                            hover: {
+                                lineWidth: 1
+                            }
+                        },
+                        threshold: null
+                    }
+},
+        series: [{
+            name: 'Presença',
+            data: [35.15, 33.85, 31.5, 30.39, 27.68, 26.33, 25.68, 25.53, 23.32, 22.77]
+        }]
+    });
+	
+	  $('#highchart7').highcharts({
+       colors: ["#ED3B1C"],
+        chart: {
+            type: 'bar',
+			style: {
+                            fontFamily: "Radiance"
+                        },
+			backgroundColor: 'transparent'
+        },
+        title: {
+            text: 'Heróis com maior presença no competitivo',
+			style:{color:'#808080'}
+        },
+        xAxis: {
+            categories: ['Beastmaster', 'Dark Seer', 'Alchemist', 'Lifestealer', 'Invoker','Earth Spirit','Doom', 'Bounty Hunter', 'Slardar', 'Lion'],
+            title: {
+                text: null
+            }
+        },
+        yAxis: {
+            min: 0,
+			max: 100,
+            title: {
+                text: 'Presença nas partidas (%)',
+                align: 'high'
+            },
+            labels: {
+                overflow: 'justify'
+            }
+        },
+        tooltip: {
+            valueSuffix: ' %'
+        },
+        plotOptions: {
+            bar: {
+                dataLabels: {
+                    enabled: true
+                }
+            }
+        },
+        credits: {
+            enabled: false
+        },
+				 plotOptions: {
+                    area: {
+                        fillColor: {
+                            linearGradient: {
+                                x1: 0,
+                                y1: 0,
+                                x2: 0,
+                                y2: 1
+                            },
+                            stops: [
+                                [0, '#ED3B1C'],
+                                [1, 'transparent']
+                            ]
+                        },
+                        lineWidth: 1,
+                        marker: {
+                            enabled: false
+                        },
+                        shadow: false,
+                        states: {
+                            hover: {
+                                lineWidth: 1
+                            }
+                        },
+                        threshold: null
+                    }
+},
+        series: [{
+            name: 'Presença',
+            data: [84, 67, 60, 59, 58, 56, 56, 53, 53, 51]
+        }]
+    });
+	
+	
+	    $('#highchart8').highcharts({
+	colors: ["#ED3B1C"],
+        chart: {
+            type: 'bar',
+			style: {
+                            fontFamily: "Radiance"
+                        },
+			backgroundColor: 'transparent'
+        },
+        title: {
+            text: 'Diferença entre a presença dos heróis nos pubs e no competitivo',
+			style:{color:'#808080'}
+        },
+        xAxis: {
+            categories: ['Beastmaster', 'Dark Seer', 'Io', 'Death Prophet', 'Alchemist','Doom','Earth Spirit', 'Batrider', 'Enchantress', 'Vengeful Spirit'],
+            title: {
+                text: null
+            }
+        },
+        yAxis: {
+            min: 0,
+			max: 100,
+            title: {
+                text: 'Diferença (%)',
+                align: 'high'
+            },
+            labels: {
+                overflow: 'justify'
+            }
+        },
+        tooltip: {
+            valueSuffix: ' %'
+        },
+        plotOptions: {
+            bar: {
+                dataLabels: {
+                    enabled: true
+                }
+            }
+        },
+        credits: {
+            enabled: false
+        },
+		 plotOptions: {
+                    area: {
+                        fillColor: {
+                            linearGradient: {
+                                x1: 0,
+                                y1: 0,
+                                x2: 0,
+                                y2: 1
+                            },
+                            stops: [
+                                [0, '#ED3B1C'],
+                                [1, 'transparent']
+                            ]
+                        },
+                        lineWidth: 1,
+                        marker: {
+                            enabled: false
+                        },
+                        shadow: false,
+                        states: {
+                            hover: {
+                                lineWidth: 1
+                            }
+                        },
+                        threshold: null
+                    }
+},
+        series: [{
+            name: 'Diferença',
+            data: [70, 56.87, 44.39, 42.92, 42.86, 42.29, 41.37, 39.37, 36.17, 30.12]
+        }]
+    });
 });
