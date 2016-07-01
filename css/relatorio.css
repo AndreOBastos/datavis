@@ -95,8 +95,8 @@ a:hover, a.buttonActive:hover, a.buttonInactive:hover {
     -o-transition: color .15s ease-in-out;
     transition: color .15s ease-in-out;
 }
-#highchart, #highchart2, #highchart3, #highchart4 {
-    max-width: 900px;
+#highchart, #highchart2, #highchart3, #highchart4, #highchart5, #highchart6, #highchart7, #highchart8{
+    width: 800px;
     min-width: 300px;
     margin-left: auto;
     margin-right: auto;

@@ -8,6 +8,11 @@ and open the template in the editor.
     <head>
         <title>Trabalho de Visualização - Dota 2</title>
         <link rel="stylesheet" type="text/css" href="css/relatorio.css">
+        <link rel="stylesheet" type='text/css' href="css/w3.css">
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js" type="text/javascript"></script>
+        <script src="https://code.highcharts.com/highcharts.js" type="text/javascript"></script>
+        <script src="js/chart.js" type="text/javascript"></script>
+        <script src='js/slideshow.js' type='text/javascript'></script>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
@@ -25,7 +30,22 @@ and open the template in the editor.
                     </div>
                     <div id='text'>
                         <p>
-                            
+                            Tendo em vista tudo que foi discutido até agora, é natural esperar que um dos maiores pontos que irá diferenciar os jogadores
+                            profissionais dos casuais seriam nos heróis escolhidos. Logo, para concluir a nossa pesquisa, fizemos uma relação dos heróis
+                            mais escolhidos por cada tipo de jogador, comparando os seus ranks em cada um dos gráficos e descobrindo quais tem maior
+                            diferença entre a taxa de escolha por ambos tipos de jogadores, seguido por uma análise do motivo por trás dessas diferenças.
+                        </p>
+                        <div class='w3-content' style='width:1000px; display:block; margin-bottom:30px; margin-top:30px; position:relative;'>
+                            <div class="slide" style='width:100%' id="highchart6"></div>
+                            <div class="slide" style='width:100%; display:none;' id="highchart7"></div>
+                            <div class="slide" style='width:100%; display:none;' id="highchart8"></div>
+                            <a class='w3-btn-floating' style='position:absolute; top:45%; left:0;' onclick='plusDivs(-1)'>&#10094;</a>
+                            <a class='w3-btn-floating' style='position:absolute; top:45%; right:0;' onclick='plusDivs(1)'>&#10095;</a>
+                        </div>
+                        <p>
+                            A primeira coisa que podemos ver claramente no primeiro gráfico é que a taxa de presença dos heróis no modo casual é bem
+                            mais distribuída do que no modo competitivo. Enquanto o herói com maior presença nas partidas no modo casual tem sido o Lion com 35% de presença,
+                            no modo competitivo temos Beastmaster com 84% de presença nas partidas.
                         </p>
                         <a href="heroisejogadores.html" class="buttonActive" id="back">
                             &#10094; Retornar

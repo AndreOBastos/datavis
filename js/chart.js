@@ -386,6 +386,7 @@ $(function () {
 			style: {
                             fontFamily: "Radiance"
                         },
+                        width:900,
 			backgroundColor: 'transparent'
         },
         title: {
@@ -462,6 +463,7 @@ $(function () {
 			style: {
                             fontFamily: "Radiance"
                         },
+                        width:900,
 			backgroundColor: 'transparent'
         },
         title: {
@@ -539,6 +541,7 @@ $(function () {
 			style: {
                             fontFamily: "Radiance"
                         },
+                        width:900,
 			backgroundColor: 'transparent'
         },
         title: {
