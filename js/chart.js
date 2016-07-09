@@ -379,7 +379,7 @@ $(function () {
                 ]
         });
 		
-		$('#highchart6').highcharts({
+    $('#highchart6').highcharts({
        colors: ["#ED3B1C"],
         chart: {
             type: 'bar',
@@ -413,17 +413,16 @@ $(function () {
         tooltip: {
             valueSuffix: ' %'
         },
-        plotOptions: {
-            bar: {
-                dataLabels: {
-                    enabled: true
-                }
+        legend: {
+            itemStyle:{
+                color:'#808080',
+                fontSize: '16px'
             }
         },
         credits: {
             enabled: false
         },
-				 plotOptions: {
+	plotOptions: {
                     area: {
                         fillColor: {
                             linearGradient: {
@@ -490,17 +489,16 @@ $(function () {
         tooltip: {
             valueSuffix: ' %'
         },
-        plotOptions: {
-            bar: {
-                dataLabels: {
-                    enabled: true
-                }
+        legend: {
+            itemStyle:{
+                color:'#808080',
+                fontSize: '16px'
             }
         },
         credits: {
             enabled: false
         },
-				 plotOptions: {
+	plotOptions: {
                     area: {
                         fillColor: {
                             linearGradient: {
@@ -526,7 +524,7 @@ $(function () {
                         },
                         threshold: null
                     }
-},
+        },
         series: [{
             name: 'Presença',
             data: [84, 67, 60, 59, 58, 56, 56, 53, 53, 51]
@@ -568,43 +566,43 @@ $(function () {
         tooltip: {
             valueSuffix: ' %'
         },
-        plotOptions: {
-            bar: {
-                dataLabels: {
-                    enabled: true
-                }
-            }
-        },
+
         credits: {
             enabled: false
         },
-		 plotOptions: {
-                    area: {
-                        fillColor: {
-                            linearGradient: {
-                                x1: 0,
-                                y1: 0,
-                                x2: 0,
-                                y2: 1
-                            },
-                            stops: [
-                                [0, '#ED3B1C'],
-                                [1, 'transparent']
-                            ]
-                        },
-                        lineWidth: 1,
-                        marker: {
-                            enabled: false
-                        },
-                        shadow: false,
-                        states: {
-                            hover: {
-                                lineWidth: 1
-                            }
-                        },
-                        threshold: null
+        legend: {
+            itemStyle:{
+                color:'#808080',
+                fontSize: '16px'
+            }
+        },
+	plotOptions: {
+            area: {
+                fillColor: {
+                    linearGradient: {
+                        x1: 0,
+                        y1: 0,
+                        x2: 0,
+                        y2: 1
+                    },
+                    stops: [
+                        [0, '#ED3B1C'],
+                        [1, 'transparent']
+                    ]
+                },
+                lineWidth: 1,
+                marker: {
+                    enabled: false
+                },
+                shadow: false,
+                states: {
+                    hover: {
+                        lineWidth: 1
                     }
-},
+                },
+                threshold: null
+            }
+        },
         series: [{
             name: 'Diferença',
             data: [70, 56.87, 44.39, 42.92, 42.86, 42.29, 41.37, 39.37, 36.17, 30.12]
