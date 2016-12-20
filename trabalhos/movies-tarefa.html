@@ -1,0 +1,77 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+        <title> Tarefa 2 - Visualização de Dados</title>
+        <link href='https://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
+        <style>
+        	div.texto{
+        		color:gray;
+        		font-size:24px;
+        		font-family: 'Slabo 27px', serif;
+        		padding-top: 40px;
+        		padding-bottom: 40px;
+        		padding-left: 100px;
+        		padding-right:100px;
+        	}
+        	#container{
+        		border:solid 3px;
+        		height:400px;
+        		margin-left:150px;
+        		margin-right:150px;
+        	}
+        	#container2{
+        		border:solid 3px;
+        		height:400px;
+        		margin-left:150px;
+        		margin-right:150px;
+        	}
+        </style>
+        <!-- Inclusões das bibliotecas JavaScript para o Highcharts
+ --> 
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script> 
+        <script src="http://code.highcharts.com/highcharts.js"></script>
+        <script> 
+			$(function () {  
+				$('#container').highcharts({
+					chart: {type:'bar'}, 
+					title: {text: 'Média das notas dadas de acordo com o gênero'}, 
+					xAxis: {title: {text:'Gênero'}, categories: ['Western','Musical','Biography','Biopic','Documentary','Fantasy','Thriller','Animation','Romance','Drama','Adventure','Crime','Action','Comedy','Mystery','Horror','Sci-fi']}, 
+					yAxis: {title: {text: 'Nota Média'}},
+					tooltip: {
+    						formatter: function() {
+        						return 'A nota média da categoria <b>' + this.x + '</b> é <b>' + this.y + '</b>';
+    						}
+					},
+					series:
+					[
+						{data: [85.00,82.67,74.83,73.00,72.20,72.00,65.71,65.65,65.45,64.36,62.72,61.19,58.86,56.09,55.00,48.38,43.00]}
+					] 
+				});
+				$('#container2').highcharts({
+					chart: {type:'line'}, 
+					title: {text: 'Número de Filmes por Nota da Audiência'}, 
+					xAxis: {title: {text:'Nota da Audiência'}, categories: [20,25,30,35,40,45,50,55,60,65,70,75,80,85,90,95]}, 
+					yAxis: {title: {text: 'Número de Filmes'}},
+					tooltip: {
+    						formatter: function() {
+        						return 'Existem <b>' + this.y + '</b> filmes com nota entre <b>' + (this.category.name - 2) + - + (this.category.name + 2) + '</b>';
+    						}
+					},
+					series:
+					[
+						{data:[3,8,21,29,45,64,67,72,55,65,61,58,43,43,26,5]}
+					]
+				}); 
+			});
+		</script>
+
+    </head> 
+    <body> 
+    	<div id="container"></div>
+    	<div class="texto"> No gráfico acima, procurei descobrir quais gêneros recebem notas maiores da audiência, sendo portanto, os favoritos. Podemos ver claramente que filmes de Velho-Oeste e Musicais são os favoritos do público. O primeiro lugar pode ser explicado pelo fato que a maioria dos filmes de velho-oeste são cheios de ação e drama na medida certa, o que agrada o público, já o segundo lugar pode ser explicado pelo público jovem, que curte as músicas de filmes musicais.</div>
+    	<div id="container2"></div>
+    	<div class="texto"> Já nesse gráfico, eu quis investigar qual é a curva de notas dadas aos filmes pelos críticos. Como esperado, o resultado é uma curva em sino, com vários filmes recebendo notas próximas de 55 e 65, com uma interessante depressão (embora leve), nas notas próximas a 60. É de se esperar que poucos filmes sejam amados ou odiados pelos críticos.</div>
+    	<div class="texto"> Quanto a dificuldades, devo dizer que busquei por maneiras de utilizar os dados do arquivo CSV diretamente, porém todos os tutoriais que achei demonstravam que era um processo muito trabalhoso, então preferi inserir os dados de cada tabela manualmente, ao invés de importá-los do arquivo "movies.csv". Uma modificação que tive que fazer, por exemplo, foi na tabela 2, que modifiquei para usar grupos de notas de 5 em 5, ao invés de ter uma linha contínua de notas.</div>
+	</body> 
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Trabalho de Visualização - Dota 2</title>
+        <link rel="stylesheet" type="text/css" href="css/relatorio.css">
+        <link rel="stylesheet" type='text/css' href="css/w3.css">
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js" type="text/javascript"></script>
+        <script src="https://code.highcharts.com/highcharts.js" type="text/javascript"></script>
+        <script src="js/chart.js" type="text/javascript"></script>
+        <script src='js/slideshow.js' type='text/javascript'></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class='content'>
+            <div id="keyArt">
+            </div>
+            <h1 id="header">
+                Dota 2: Análise do Perfil dos Jogadores
+            </h1>
+            <div class="sectionContainer">
+                <div class='section'>
+                    <div id='header'>
+                        Conclusão
+                    </div>
+                    <div id='text'>
+                        <p>
+                            Tendo em vista tudo que foi discutido até agora, é natural esperar que um dos maiores pontos que irá diferenciar os jogadores
+                            profissionais dos casuais seriam nos heróis escolhidos. Logo, para concluir a nossa pesquisa, fizemos uma relação dos heróis
+                            mais escolhidos por cada tipo de jogador, comparando os seus ranks em cada um dos gráficos e descobrindo quais tem maior
+                            diferença entre a taxa de escolha por ambos tipos de jogadores, seguido por uma análise do motivo por trás dessas diferenças.
+                        </p>
+                        <div class='w3-content' style='width:1000px; display:block; margin-bottom:30px; margin-top:30px; position:relative;'>
+                            <div class="slide" style='width:95%' id="highchart6"></div>
+                            <div class="slide" style='width:95%; display:none;' id="highchart7"></div>
+                            <div class="slide" style='width:95%; display:none;' id="highchart8"></div>
+                            <a class='w3-btn-floating' style='position:absolute; top:45%; left:0;' onclick='plusDivs(-1)'>&#10094;</a>
+                            <a class='w3-btn-floating' style='position:absolute; top:45%; right:0;' onclick='plusDivs(1)'>&#10095;</a>
+                        </div>
+                        <p>
+                            A primeira coisa que podemos ver claramente no primeiro gráfico é que a taxa de presença dos heróis no modo casual é bem
+                            mais distribuída do que no modo competitivo. Enquanto o herói com maior presença nas partidas no modo casual tem sido o Lion com 35% de presença,
+                            no modo competitivo temos Beastmaster com 84% de presença nas partidas.
+                        </p>
+                        <p>
+                            Para a nossa conclusão final, irei analisar, em ordem de maior diferença, o por quê de alguns heróis serem mais escolhidos do que outros:
+                        </p>
+                        <ul>
+                            <li>
+                                <b>Beastmaster:</b>
+                                <div>
+                                    <p>
+                                        Beastmaster é um herói bastante cobiçado no cenário competitivo atual devido ao seu conjunto de skills. Capaz de
+                                        invocar criaturas que dão ao seu time visão e que podem reduzir a velocidade do inimigo, munido também com uma
+                                        passiva que aumenta a velocidade de ataque dos seus companheiros e de um ult capaz de parar qualquer inimigo. Esse
+                                        herói é bastante agressivo, e, se bem coordenado com a sua equipe, pode devastar qualquer corredor até a base inimiga.
+                                    </p>
+                                    <p>
+                                        O que torna esse herói forte no modo competitivo, porém, é o que é responsável por ele não ser tão popular entre os jogadores
+                                        casuais. Falta de coordenação com a própria equipe é algo comum no modo casual, já que nem todos os jogadores comunicam os seus
+                                        movimentos. Unindo isso ao fato do jogador ter que controlar mais de uma unidade ao mesmo tempo, habilidade chamada de <b>micro</b>,
+                                        algo que poucos jogadores conseguem fazer efetivamente, explica muito bem a impopularidade do herói.
+                                    </p>
+                                    <img class='slide' style='box-shadow:none; width:60%; padding-bottom:30px;' src="images/beastmaster.jpg" alt="Mapa - Dota 2">
+                                </div>
+                            </li>
+                            <li>
+                                <b>Dark Seer</b>
+                                <div>
+                                    <p>
+                                        Com habilidades que focam em controlar o movimento da equipe inimiga, Dark Seer é famoso no competitivo por ser um herói capaz de
+                                        transformar derrotas em vitórias. Capaz de impedir que os heróis inimigos obtenham ouro nos corredores usando uma habilidade que
+                                        dá dano em quem chegar perto da carapaça que ele pode usar para cercar unidades aliadas, ele é bastante importante no começo do jogo.
+                                        No final do jogo, esse herói é capaz de ajudar em lutas usando sua parede ilusória, que cria cópias de qualquer oponente que passe pela
+                                        parede, e é nessa habilidades que temos a sua capacidade de tornar uma derrota em vitória, pois o quão mais fortes os seus oponentes
+                                        estiverem, mais poderosas serão essas ilusões, que são facilmente capazes de ganhar uma luta.
+                                    </p>
+                                    <p>
+                                        No final, o que torna ele impopular com os outrs jogadores é bem similar ao que torna o Beastmaster impopular. Esse herói depende bastante
+                                        de coordenação, e com suas habilidades mais importantes dependendo de grandes lutas para serem úteis, algo que não é comum de jogos casuais.
+                                    </p>
+                                    <img class='slide' style='box-shadow:none; width:60%; padding-bottom:30px;' src="images/darkseer.jpg" alt="Mapa - Dota 2">
+                                </div>
+                            </li>
+                            <li>
+                                <b>Io</b>
+                                <div>
+                                    <p>
+                                        Io é um herói puramente de suporte, com todas as suas habilidades requerindo um segundo jogador para serem usadas, visto que ela precisa se
+                                        ligar a outro herói para utilizá-la bem. Logo, no competitivo, ela é bastante utilizada em combinação com outros heróis que se beneficiam
+                                        bastante do suporte dela.
+                                    </p>
+                                    <p>
+                                        Já no modo casual, o fato que ela depende de outro herói para ser bem utilizada é mal-vista pelos jogadores casuais, que em geral preferem
+                                        não ter que depender dos companheiros de equipe. No modo casual também é bem mais difícil coordenar para que sua equipe pegue os heróis que
+                                        mais se beneficiam do suporte da Io.
+                                    </p>
+                                    <img class='slide' style='box-shadow:none; width:60%; padding-bottom:30px;' src="images/io.jpg" alt="Mapa - Dota 2">
+                                </div>
+                            </li>
+                            <li>
+                                <b>Death Prophet</b>
+                                <div>
+                                    <p>
+                                        A Death Prophet é um herói que especializa em dominar o corredor central do mapa, obtendo níveis até conseguir sua
+                                        habilidade principal, onde a partir daí, ela irá ir de corredor em corredor usando essa habilidade para ajudar a
+                                        derrubar as torres inimigas. Por causa disso, esse é um herói que capitaliza em terminar o jogo o mais rápido possível,
+                                        dependendo portanto de uma composição de time que não precise de itens para poder ajudá-la.
+                                    </p>
+                                    <p>
+                                        Por conta dessa necessidade de uma composição de time, a Death Prophet tende a não ser muito considerada pelos casuais ao
+                                        escolher o seu herói, já que, embora possa ser jogada em várias composições de time, somente em algumas composições de equipe
+                                        ela possa ser jogada como o herói principal. E essas composições são mais vistas em jogos competitivas do que em jogos casuais.
+                                    </p>
+                                    <img class='slide' style='box-shadow:none; width:60%; padding-bottom:30px;' src="images/dp.jpg" alt="Mapa - Dota 2">
+                                </div>
+                            </li>
+                            <li>
+                                <b>Alchemist</b>
+                                <div>
+                                    <p>
+                                        Alchemist é um herói que se especializa em obter ouro rapidamente, sendo capaz de comprar os itens mais caros bem mais rápido
+                                        do que vários outros heróis que também precisam de itens para serem capazes de terminar o jogo. O problema que torna esse herói
+                                        não atrativo para jogadores casuais é que, embora ele possa fazer vários itens rápidos, o herói em si não consegue pressionar muito
+                                        o time inimigo, que pode facilmente comprar alguns itens para escapar dele.
+                                    </p>
+                                    <p>
+                                        Por precisar de um time que entenda quando se unir ao Alchemist para derrubar as torres e começar a ganhar o jogo, ele tem muito mais
+                                        sucesso ao ser jogado em jogos competitivos.
+                                    </p>
+                                    <img class='slide' style='box-shadow:none; width:60%; padding-bottom:30px;' src="images/alch.jpg" alt="Mapa - Dota 2">
+                                </div>
+                            </li>
+                            <li>
+                                <b>Doom</b>
+                                <div>
+                                    <p>
+                                        No jogo, vários heróis possuem outros heróis que são capazes de contra-atacar as suas habilidades, seja por serem capazes de negar
+                                        o uso dessas habilidades, ou simplesmente consertar qualquer estrago causado por essas habilidades. Doom é considerado como o herói
+                                        que é capaz de contra-atacar qualquer outro herói com a sua habilidade principal, Doom. Ela silencia o herói inimigo e os seus itens,
+                                        tornando-o incapaz de usar qualquer habilidade.
+                                    </p>
+                                    <p>
+                                        A popularidade do herói em jogos casuais foi caindo a medida que vários updates foram lançados ao jogo, que diminuíram a eficiência
+                                        das suas outras habilidades, fazendo com que o herói tenha que obter mais ouro e itens para poder participar das lutas com a sua
+                                        equipe. Porém, o herói continuou tendo o seu papel em competitivo de poder ser usado para contra-atacar equipes com composições que
+                                        dependem muito de um herói.
+                                    </p>
+                                    <img class='slide' style='box-shadow:none; width:60%; padding-bottom:30px;' src="images/doom.jpg" alt="Mapa - Dota 2">
+                                </div>
+                            </li>
+                            <li>
+                                <b>Earth Spirit</b>
+                                <div>
+                                    <p>
+                                        Earth Spirit é um herói que é bastante complicado de ser jogado efetivamente. Seu conjunto de habilidades requer
+                                        planejamento cuidadoso, pois ele depende de estátuas que o próprio herói posiciona no mapa para parar ou silenciar
+                                        os seus oponentes. Essas estátuas precisam ser empurradas ou puxadas sobre os heróis inimigos, logo o posicionamento
+                                        do seu herói é a habilidade mais importante ao se jogar com o herói.
+                                    </p>
+                                    <p>
+                                        Essas dificuldades, porém, compensam um herói com habilidades muito fortes, e que na mão de um jogador que sabe utilizar
+                                        bem o herói, é capaz de dominar o oponente durante uma luta. Logo, esse herói é muito mais visto em jogos competitivos,
+                                        que naturalmente treinaram muito mais com o herói.
+                                    </p>
+                                    <img class='slide' style='box-shadow:none; width:60%; padding-bottom:30px;' src="images/es.jpg" alt="Mapa - Dota 2">
+                                </div>
+                            </li>
+                            <li>
+                                <b>Batrider</b>
+                                <div>
+                                    <p>
+                                        Batrider é um herói cujo papel principal em um time é utilizar a sua habilidade mais importante, o laço, para segurar um
+                                        dos heróis inimigos durante uma luta para remover a ameaça. Esse herói era bastante popular tanto no modo competitivo quanto
+                                        no modo casual devido a ser bastante útil em todos os momentos do jogo. Porém, com cada update lançado no jogo, o herói teve
+                                        o poder de suas habilidades e o tempo entre cada utilização da habilidade cada vez mais reduzidas, diminuindo sua eficácia.
+                                    </p>
+                                    <p>
+                                        Com isso, o herói passou a ser escolhido cada vez menos em jogos casuais, onde ele dificilmente é jogado com máxima eficiência.
+                                        Dito isso, o herói ainda é escolhido em partidas competitivas em certas composições de equipe onde o seu começo fraco pode ser
+                                        mitigado.
+                                    </p>
+                                    <img class='slide' style='box-shadow:none; width:60%; padding-bottom:30px;' src="images/bat.jpg" alt="Mapa - Dota 2">
+                                </div>
+                            </li>
+                            <li>
+                                <b>Enchantress</b>
+                                <div>
+                                    <p>
+                                        A Enchantress é um herói cujas habilidades permitem que ela controle criaturas da selva para usá-las por um certo período de tempo.
+                                        Fazer um bom uso desse herói requer conhecer as habilidades das criaturas e ter a capacidade de controlar múltiplas unidades ao mesmo
+                                        tempo, do contrário, o herói é bastante frágil, e não muito efetivo nos corredores. Nas mãos de um bom jogador, esse herói é bastante
+                                        eficiente em atrapalhar o começo do jogo para os oponentes, já que as criaturas da selva são bem poderosas para os heróis no começo.
+                                    </p>
+                                    <p>
+                                        A habilidade necessária para jogar o herói faz com que ele seja pouco utilizado no modo casual, porém as suas habilidades fazem com
+                                        que ele seja extremamente cobiçado em composições de time que dependem de derrubar as torres do inimigo o mais rápido possível,
+                                        antes do jogo se tornar perigoso demais para a Enchantress.
+                                    </p>
+                                    <img class='slide' style='box-shadow:none; width:60%; padding-bottom:30px;' src="images/ench.jpg" alt="Mapa - Dota 2">
+                                </div>
+                            </li>
+                            <li>
+                                <b>Vengeful Spirit</b>
+                                <div>
+                                    <p>
+                                        Para o jogador casual, a Vengeful Spirit não é nada mais do que um herói com uma habilidade que é capaz de parar um herói para alguns segundos
+                                        e que deve ficar sempre ajudando a proteger o herói que está obtendo recursos no corredor para garantir que ele tenha os itens necessários para
+                                        vencer as lutas. Nas mãos dos jogadores profissionais, porém, esse herói é capaz de atrasar bastante os heróis inimigos, indo de corredor
+                                        em corredor usando suas habilidades, coordenando ataques com outros membros da equipe para matar os oponentes ou forçar o time inimigo a se reunir
+                                        e encarar o ataque.
+                                    </p>
+                                    <img class='slide' style='box-shadow:none; width:60%; padding-bottom:30px;' src="images/venge.jpg" alt="Mapa - Dota 2">
+                                    <p>
+
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                        <a href="heroisejogadores.html" class="buttonActive" id="back">
+                            &#10094; Retornar
+                        </a>
+                        <a href ="#" class="buttonInactive" id="forward">
+                            Continuar &#10095;
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id='footer'>
+            Equipe:
+            <ul>
+                <li> Alexandre Sombra Lima </li>
+                <li> André de Oliveira Bastos </li>
+                <li> Eduardo Rodrigues Duarte Neto </li>
+            </ul>
+        </div>
+        <div id="footer-info">
+            Dados obtidos dos sites: <a href='http://pt.dotabuff.com/heroes' target='_blank' style='text-decoration:underline'>Databuff</a>,
+            <a href='http://www.gosugamers.net/dota2/hero-stats' target='_blank' style='text-decoration:underline'>GosuGamers</a>,<br>
+            <a href='http://dota2.gamepedia.com/Dota_2_Wiki/pt-br' target='_blank' style='text-decoration:underline'>Dota 2 Wiki</a>,
+            <a href='http://steamcharts.com/app/570' target='_blank' style='text-decoration:underline'>Steam Charts</a> e
+            <a href='http://www.esportsearnings.com/games/231-dota-2' target='_blank' style='text-decoration:underline'>e-Sports Earnings</a>.
+        </div>
+    </body>
+</html>
